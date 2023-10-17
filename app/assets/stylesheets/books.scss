@@ -1,0 +1,19 @@
+// Place all the styles related to the Books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* ナビゲーションメニュー */
+.navbar {
+  background-color: #333;
+  color: #fff;
+}
+
+
+.book {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
