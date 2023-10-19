@@ -22,21 +22,18 @@
     <% end %>
  </tbody>
 </table> 
- 
-  <h2>New Books</h2>
-<div>  
- <%= form_with model: Book.new, local: true do |f| %>
 
-　<div class="field">
-　  <%= f.label :title %>
-    <%= f.text_field :title %>
-　</div>
-  <div class="field">
-    <%= f.label :body%>
-    <%= f.text_area :body %>
-  </div>
-  <div class="actions">
-    <%= f.submit 'Create Books' %>
-  </div>
+<br>
+
+<h1>New Book</h1>
+ <%= form_with model: Book.new, local: true do |f| %>
+ <div class="field">
+  <lavel>Title</lavel><br>
+  <%= f.text_field :title %><br>
+ </div>
+ <div class="field">
+  <lavel>Body</lavel><br>
+  <%= f.text_area :body %><br>
+ </div>
+  <%= f.submit 'Create Book' %>
  <% end %>
-</div> 
