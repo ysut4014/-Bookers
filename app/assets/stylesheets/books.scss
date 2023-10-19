@@ -1,19 +1,76 @@
+
 // Place all the styles related to the Books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* ナビゲーションメニュー */
-.navbar {
-  background-color: #333;
-  color: #fff;
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.strong { 
+    font-weight: bold;
+
+}
+
+body{
+    font-family: verdana, arial, helvetica, sans-serif;
+    color: #333;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+    background-color: #fff;
+
 }
 
 
-.book {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
+
+
+td {
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a {
+    color: #000;
+}
+
+th {
+    padding-bottom: 5px;
+}
+
+p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+    white-space:nowrap;
+
+}
+
+div.field {
+    margin-bottom: 10px;
+            line-height: 1;
+
+}
+
+
+label {
+    display: block;
+
+}
+
+form {
+    margin: 0px;
+}
