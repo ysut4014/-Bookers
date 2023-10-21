@@ -17,14 +17,13 @@ class BooksController < ApplicationController
     end
     def create
         @book = Book.new(book_params)
+        
        if @book.save
         redirect_to book_path(@book.id)
         flash[:notice] = "Book was successfully created."
-        redirect_to book_path(@book)
-        flash[:error] = "prohibited this book from being saved:"
-
        else
-        render 'new'
+        @books = Book.all
+        render 'index'
         
        end
     end
@@ -36,13 +35,11 @@ class BooksController < ApplicationController
         if @book.update(book_params)
          redirect_to book_path(@book.id)
          flash[:notice] = "Book was successfully updated."
-         flash[:error] = "prohibited this book from being saved:"
 
 
 
         else
          render 'edit'
-         flash[:notice] = "error prohibited this book from being saved:"
         end
     end
     def destroy

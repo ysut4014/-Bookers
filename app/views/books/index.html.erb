@@ -26,26 +26,36 @@
 <br>
 
 <h1>New Book</h1>
-
-<% if flash[:error] %>
-  <div class="alert alert-danger">
-    <%= flash[:error] %>
-  </div>
-<% end %>
-
-
-
-
  <%= form_with model: Book.new, local: true do |f| %>
- 
- 
+
+<% if @book.errors.any? %>
+<div id="error_explanation">
+
+  <h2><%= @book.errors.count %>error prohibited this book from being saved:</h2>
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+  
+ </div>
+
+ <% end %>
  <div class="field">
-  <lavel>Title</lavel><br>
+ <div class="<%= 'alert' if @book.errors.any?%>">
+  <%= f.label :title %><br>
+ </div>
+ <div class="<%= 'alert' if @book.errors.any?%>">
   <%= f.text_field :title %><br>
  </div>
+ </div>
  <div class="field">
-  <lavel>Body</lavel><br>
+ <div class="<%= 'alert' if @book.errors.any?%>">
+  <%= f.label :body %><br>
+ </div>
+ <div class="<%= 'alert' if @book.errors.any?%>">
   <%= f.text_area :body %><br>
+ </div>
  </div>
   <%= f.submit 'Create Book' %>
  <% end %>

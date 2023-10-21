@@ -23,14 +23,14 @@ a:visited {
 }
 
 body{
-    font-family: verdana, arial, helvetica, sans-serif;
-    color: #333;
-    font-size: 13px;
-    line-height: 18px;
-    margin: 33px;
-    background-color: #fff;
+     font-family: verdana, arial, helvetica, sans-serif;
+     color: #333;
+     font-size: 13px;
+     line-height: 18px;
+     margin: 33px;
+     background-color: #fff;
 
-}
+ }
 
 
 
@@ -64,10 +64,10 @@ div.field {
 }
 
 
-label {
-    display: block;
+// label {
+//     display: block;
 
-}
+// }
 
 div.actions {
     margin-bottom: 10px;
@@ -76,3 +76,48 @@ div.actions {
 #notice {
     color: green;
 }
+
+#error_explanation  {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+} 
+
+#error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0;
+    background-color: #c00;
+    color: #fff;
+}
+
+h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px -7px 0;
+    background-color: #c00;
+    color: #fff;
+}
+
+ul li {
+    font-size: 12px;
+    list-style: square;
+}
+  
+.alert {
+      padding: 2px;
+      background-color: red;
+      display: table;
+}
+  
+
+ div.field {
+     margin-bottom: 10px;
+ }
