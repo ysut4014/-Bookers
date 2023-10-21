@@ -26,7 +26,19 @@
 <br>
 
 <h1>New Book</h1>
+
+<% if flash[:error] %>
+  <div class="alert alert-danger">
+    <%= flash[:error] %>
+  </div>
+<% end %>
+
+
+
+
  <%= form_with model: Book.new, local: true do |f| %>
+ 
+ 
  <div class="field">
   <lavel>Title</lavel><br>
   <%= f.text_field :title %><br>

@@ -2,11 +2,6 @@
 // Place all the styles related to the Books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 h1 {
     display: block;
@@ -16,6 +11,10 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+}
+
+a:visited {
+    color: #666;
 }
 
 .strong { 
@@ -61,7 +60,6 @@ p, ol, ul, td {
 
 div.field {
     margin-bottom: 10px;
-            line-height: 1;
 
 }
 
@@ -71,6 +69,10 @@ label {
 
 }
 
-form {
-    margin: 0px;
+div.actions {
+    margin-bottom: 10px;
+}
+
+#notice {
+    color: green;
 }
